@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP — adapted for pawellach.github.io
+	html5up.net | @n33co | CCA 3.0 license
+-->
+<html>
+<head>
+	<title>Paweł Lach — PM · Salesforce Lead · AI Practitioner</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Paweł Lach — PM, Salesforce Lead, AI practitioner. Open-source tools for project managers." />
+	<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+		#main footer ul.icons {
+			display: grid;
+			grid-template-columns: repeat(3, auto);
+			justify-content: center;
+			column-gap: 0.2em;
+			row-gap: 0.1em;
+		}
+		#main footer ul.icons li {
+			display: flex;
+			justify-content: center;
+		}
+
+		/* Projects section */
+		#projects {
+			margin-top: 2.5em;
+			width: 100%;
+			max-width: 420px;
+		}
+		#projects h2 {
+			font-size: 0.7em;
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
+			color: rgba(255,255,255,0.35);
+			margin-bottom: 1em;
+			text-align: center;
+		}
+		.project-grid {
+			display: flex;
+			flex-direction: column;
+			gap: 0.6em;
+		}
+		.project-card {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background: rgba(255,255,255,0.04);
+			border: 1px solid rgba(255,255,255,0.08);
+			border-radius: 6px;
+			padding: 0.65em 1em;
+			text-decoration: none;
+			transition: background 0.2s, border-color 0.2s;
+		}
+		.project-card:hover {
+			background: rgba(79,255,176,0.08);
+			border-color: rgba(79,255,176,0.25);
+			text-decoration: none;
+		}
+		.project-name {
+			font-family: 'Courier New', monospace;
+			font-size: 0.78em;
+			color: #4FFFB0;
+			letter-spacing: 0.02em;
+		}
+		.project-desc {
+			font-size: 0.65em;
+			color: rgba(255,255,255,0.4);
+			text-align: right;
+			max-width: 55%;
+		}
+	</style>
+</head>
+<body class="is-loading">
+
+	<div id="wrapper">
+
+		<section id="main">
+			<header>
+				<span class="avatar"><img src="images/avatar.jpg" alt="Paweł Lach" /></span>
+				<h1>Paweł Lach</h1>
+				<p>PM · Salesforce Lead · AI Practitioner</p>
+			</header>
+
+			<footer>
+				<ul class="icons">
+					<li><a href="https://github.com/pawellach" class="icon fa-brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/l2studio" class="icon fa-brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://medium.com/@pawellach" class="icon fa-brands fa-medium" target="_blank"><span class="label">Medium</span></a></li>
+					<li><a href="https://pawellach.substack.com" class="icon fa-brands fa-substack" target="_blank"><span class="label">Substack</span></a></li>
+					<li><a href="https://x.com/pawellach" class="icon fa-brands fa-x-twitter" target="_blank"><span class="label">X</span></a></li>
+					<li><a href="mailto:pawel.lach@l2studio.pl" class="icon fa-solid fa-envelope" target="_blank"><span class="label">Mail</span></a></li>
+				</ul>
+
+				<div id="projects">
+					<h2>Open Source</h2>
+					<div class="project-grid">
+						<a class="project-card" href="https://pawellach.github.io/pm-ai-prompts/" target="_blank">
+							<span class="project-name">pm-ai-prompts</span>
+							<span class="project-desc">AI prompts &amp; skills for PMs</span>
+						</a>
+						<a class="project-card" href="https://pawellach.github.io/portfolio-control-agent/" target="_blank">
+							<span class="project-name">portfolio-control-agent</span>
+							<span class="project-desc">Jira + email → morning briefing</span>
+						</a>
+						<a class="project-card" href="https://pawellach.github.io/local-ai-environment/" target="_blank">
+							<span class="project-name">local-ai-environment</span>
+							<span class="project-desc">Ollama + Open-WebUI on Windows</span>
+						</a>
+					</div>
+				</div>
+			</footer>
+		</section>
+
+		<footer id="footer">
+			<ul class="copyright">
+				<li>&copy; Paweł Lach</li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+	<script>
+		if ('addEventListener' in window) {
+			window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+		}
+	</script>
+
+</body>
+</html>
