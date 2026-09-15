@@ -1,138 +1,177 @@
-<!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP — adapted for pawellach.github.io
-	html5up.net | @n33co | CCA 3.0 license
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Paweł Lach — PM · Salesforce Lead · AI Practitioner</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Paweł Lach — PM, Salesforce Lead, AI practitioner. Open-source tools for project managers." />
-	<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	<style>
-		#main footer ul.icons {
-			display: grid;
-			grid-template-columns: repeat(3, auto);
-			justify-content: center;
-			column-gap: 0.2em;
-			row-gap: 0.1em;
-		}
-		#main footer ul.icons li {
-			display: flex;
-			justify-content: center;
-		}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paweł Lach — PM · Salesforce Lead · AI Practitioner</title>
+  <meta name="description" content="25 years bridging technology and business outcomes. PM, Salesforce implementation lead, AI practitioner." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0D0F12;
+      color: #E8EAF0;
+      font-family: 'Inter', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .container { max-width: 600px; width: 100%; }
+    .label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      color: #4FFFB0;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: #E8EAF0;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      font-size: 0.95rem;
+      color: #6B7280;
+      margin-bottom: 0.75rem;
+    }
+    .tagline {
+      font-size: 1rem;
+      color: #A0AEC0;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+    pre {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+      background: #161A20;
+      border: 1px solid #2D3748;
+      border-radius: 10px;
+      padding: 1.5rem;
+      color: #A8B2C8;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+      overflow-x: auto;
+    }
+    pre .prompt { color: #4FFFB0; }
+    pre .cmd    { color: #E8EAF0; }
+    pre .out    { color: #A8B2C8; }
+    pre .acc    { color: #4FFFB0; }
 
-		/* Projects section */
-		#projects {
-			margin-top: 2.5em;
-			width: 100%;
-			max-width: 420px;
-		}
-		#projects h2 {
-			font-size: 0.7em;
-			letter-spacing: 0.2em;
-			text-transform: uppercase;
-			color: rgba(255,255,255,0.35);
-			margin-bottom: 1em;
-			text-align: center;
-		}
-		.project-grid {
-			display: flex;
-			flex-direction: column;
-			gap: 0.6em;
-		}
-		.project-card {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			background: rgba(255,255,255,0.04);
-			border: 1px solid rgba(255,255,255,0.08);
-			border-radius: 6px;
-			padding: 0.65em 1em;
-			text-decoration: none;
-			transition: background 0.2s, border-color 0.2s;
-		}
-		.project-card:hover {
-			background: rgba(79,255,176,0.08);
-			border-color: rgba(79,255,176,0.25);
-			text-decoration: none;
-		}
-		.project-name {
-			font-family: 'Courier New', monospace;
-			font-size: 0.78em;
-			color: #4FFFB0;
-			letter-spacing: 0.02em;
-		}
-		.project-desc {
-			font-size: 0.65em;
-			color: rgba(255,255,255,0.4);
-			text-align: right;
-			max-width: 55%;
-		}
-	</style>
+    /* projects */
+    .projects-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      color: #4B5563;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .project-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #161A20;
+      border: 1px solid #232830;
+      border-radius: 6px;
+      padding: 0.6rem 0.9rem;
+      text-decoration: none;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .project-card:hover {
+      border-color: rgba(79,255,176,0.3);
+      background: rgba(79,255,176,0.05);
+    }
+    .project-name {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: #4FFFB0;
+    }
+    .project-desc {
+      font-size: 0.72rem;
+      color: #4B5563;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .links a {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: #4FFFB0;
+      text-decoration: none;
+    }
+    .links a:hover { text-decoration: underline; }
+
+    .footer {
+      font-size: 0.78rem;
+      color: #6B7280;
+      border-top: 1px solid #1E2330;
+      padding-top: 1.25rem;
+    }
+    .footer a { color: #4FFFB0; text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+  </style>
 </head>
-<body class="is-loading">
+<body>
+  <div class="container">
+    <p class="label">pawellach.github.io</p>
+    <h1>Paweł Lach</h1>
+    <p class="subtitle">PM · Salesforce Lead · AI Practitioner</p>
+    <p class="tagline">25 years bridging technology and business outcomes.</p>
 
-	<div id="wrapper">
+    <pre><span class="prompt">></span> <span class="cmd">whoami</span>
+<span class="out">PM, Salesforce lead, AI practitioner.
+Building since 2000.</span>
 
-		<section id="main">
-			<header>
-				<span class="avatar"><img src="images/avatar.jpg" alt="Paweł Lach" /></span>
-				<h1>Paweł Lach</h1>
-				<p>PM · Salesforce Lead · AI Practitioner</p>
-			</header>
+<span class="prompt">></span> <span class="cmd">ls ./open-source</span>
+<span class="acc">pm-ai-prompts/  portfolio-control-agent/  local-ai-environment/</span></pre>
 
-			<footer>
-				<ul class="icons">
-					<li><a href="https://github.com/pawellach" class="icon fa-brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-					<li><a href="https://www.linkedin.com/in/l2studio" class="icon fa-brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://medium.com/@pawellach" class="icon fa-brands fa-medium" target="_blank"><span class="label">Medium</span></a></li>
-					<li><a href="https://pawellach.substack.com" class="icon fa-brands fa-substack" target="_blank"><span class="label">Substack</span></a></li>
-					<li><a href="https://x.com/pawellach" class="icon fa-brands fa-x-twitter" target="_blank"><span class="label">X</span></a></li>
-					<li><a href="mailto:pawel.lach@l2studio.pl" class="icon fa-solid fa-envelope" target="_blank"><span class="label">Mail</span></a></li>
-				</ul>
+    <p class="projects-label">Open Source</p>
+    <div class="projects">
+      <a class="project-card" href="https://pawellach.github.io/pm-ai-prompts/" target="_blank" rel="noopener">
+        <span class="project-name">pm-ai-prompts</span>
+        <span class="project-desc">AI prompts &amp; skills for PMs</span>
+      </a>
+      <a class="project-card" href="https://pawellach.github.io/portfolio-control-agent/" target="_blank" rel="noopener">
+        <span class="project-name">portfolio-control-agent</span>
+        <span class="project-desc">Jira + email → morning briefing</span>
+      </a>
+      <a class="project-card" href="https://pawellach.github.io/local-ai-environment/" target="_blank" rel="noopener">
+        <span class="project-name">local-ai-environment</span>
+        <span class="project-desc">Ollama + Open-WebUI on Windows</span>
+      </a>
+    </div>
 
-				<div id="projects">
-					<h2>Open Source</h2>
-					<div class="project-grid">
-						<a class="project-card" href="https://pawellach.github.io/pm-ai-prompts/" target="_blank">
-							<span class="project-name">pm-ai-prompts</span>
-							<span class="project-desc">AI prompts &amp; skills for PMs</span>
-						</a>
-						<a class="project-card" href="https://pawellach.github.io/portfolio-control-agent/" target="_blank">
-							<span class="project-name">portfolio-control-agent</span>
-							<span class="project-desc">Jira + email → morning briefing</span>
-						</a>
-						<a class="project-card" href="https://pawellach.github.io/local-ai-environment/" target="_blank">
-							<span class="project-name">local-ai-environment</span>
-							<span class="project-desc">Ollama + Open-WebUI on Windows</span>
-						</a>
-					</div>
-				</div>
-			</footer>
-		</section>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/l2studio" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://pawellach.substack.com" target="_blank" rel="noopener">Substack</a>
+      <a href="https://medium.com/@pawellach" target="_blank" rel="noopener">Medium</a>
+      <a href="https://github.com/pawellach" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:pawel.lach@l2studio.pl">pawel.lach@l2studio.pl</a>
+    </div>
 
-		<footer id="footer">
-			<ul class="copyright">
-				<li>&copy; Paweł Lach</li>
-			</ul>
-		</footer>
-
-	</div>
-
-	<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-	<script>
-		if ('addEventListener' in window) {
-			window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-		}
-	</script>
-
+    <p class="footer">
+      <a href="https://pawellach.pl" target="_blank" rel="noopener">pawellach.pl</a>
+      &nbsp;&middot;&nbsp;
+      <a href="https://l2studio.pl" target="_blank" rel="noopener">l2studio.pl</a>
+    </p>
+  </div>
 </body>
 </html>
